@@ -73,9 +73,13 @@
 			<br>
             <div style="padding-left: 5%; padding-right: 5%;">
                 <div align="center">
-                    <img src="img/arch.jpg" width="100%"> <br>
+                    <img src="img/framework.png" width="100%"> <br>
                 </div>
-            <p style="line-height:180%">Figure 1. The overview architecture of the proposed HiCLR. There are <i>k</i> branches corresponding to the different augmentation invariance learning. We employ a growing augmentation strategy to generate multiple highly correlated positive pairs corresponding to different augmented strengths.  The augmented views are encoded via the query/key encoder and projector. Meanwhile, a hierarchical self-supervised loss is proposed to align the feature distributions of adjacent branches, which is optimized jointly with the InfoNCE loss.
+            <p style="line-height:180%">Figure 1. The framework of the proposed bottleneck neural representation. 
+    A constrained deep embedding is first extracted and then transformed into enhanced Retinex-based layer-wise representations.
+    Hybrid neural representation provides richer intrinsic information but still set bottlenecks from the perspective of content.
+    Entropy minimization applies the bottleneck constraint in the objective view to suppress noise and correct illumination.
+    A chromatic Retinex representation helps align layer-wise frames, which facilitates self-supervised learning.
             
 			</div>
         
@@ -83,17 +87,17 @@
             <div style="padding-left: 5%; padding-right: 5%;">
                 <div align="center">
 					<p style="line-height:150%">
-					Table 1. Linear evaluation results on NTU60 and NTU120 datasets.
+					Table 1. Subject results on DRV-dynamic datasets.
 					</p>
-                    <img src="img/result.jpg" width="100%"> <br>
+                    <img src="img/score.png" width="100%"> <br>
                 </div>
 			<br>
 
                 <div align="center">
 					<p style="line-height:150%">
-					Table 2. Supervised evaluation results on NTU60 and NTU120 datasets.
+					Table 2. Objective results on DRV-dynamic dataset.
 					</p>
-                    <img src="img/sup_result.jpg" width="50%"> <br>
+                    <img src="img/result.png" width="50%"> <br>
                 </div>
 			</div>
 		
